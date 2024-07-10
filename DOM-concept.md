@@ -20,8 +20,15 @@ In fact, DOM takes files with html and xml extensions and turns them into an obj
 
 
 
+
+
+
 CRP => Critical Rendering Path
-در واقع هر browser برای خود یک CRP دارد که بر اساس اولویت آن مشخص می کند که کدام بخش صفحه ابتدا رندر گرفته شود.
+
+
+In fact, each browser has a CRP for itself, which determines which part of the page should be rendered first based on its priority.
+
+
 
 DOM : Spource & Sink
 *DOM Source => وقتی کاربر اطلاعات را در سایت وارد میکند در این قسمت می نشیند 
