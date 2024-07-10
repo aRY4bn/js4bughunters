@@ -5,7 +5,18 @@ DOM => Document Object Model
  
  -DOM => api 
 
+
+*DOM is an api that connects the js with the html of the page. 
+
+
+*Actually, all tags and html codes are stored as documents in js and js can access it with DOM. 
+
+
+*In fact, DOM takes files with html and xml extensions and turns them into an object that js can recognize. In fact, tags in html are known as elements in js
+
  
+More:
+
 
 The Document Object Model (DOM) is a programming interface for web documents. It represents the structure of a document (like an HTML or XML file) as a tree of objects, where each object corresponds to a part of the document. This model allows programs and scripts (like JavaScript) to dynamically access and update the content, structure, and style of documents.
 JS use api(DOM) to connect with HTML
@@ -20,13 +31,8 @@ Relationship between HTML and DOM:
   -DOM is an API that allows JavaScript to interact with and manipulate HTML.
 
 
-DOM is an api that connects the js with the html of the page. 
 
 
-Actually, all tags and html codes are stored as documents in js and js can access it with DOM. 
-
-
-In fact, DOM takes files with html and xml extensions and turns them into an object that js can recognize. In fact, tags in html are known as elements in js
 
 
 JavaScript utilizes the DOM API to connect with and manipulate the HTML of a page. Through the DOM, JavaScript can:
