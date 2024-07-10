@@ -1,0 +1,42 @@
+simple ajax request with XHR
+
+http://127.0.0.1/secret.html :
+
+
+ 
+<!DOCTYPE html>
+<html>
+<body>
+    <h2>Secret Text</h2>
+    <p id="token"> kjglkfdglkfdglkfdglkfdg </p>
+</body>
+</html>
+ 
+
+http://127.0.0.1/hijacktoken.html:
+
+
+<!DOCTYPE html>
+<html>
+<body>
+    <button id="btn" onclick="">click</button><br>
+    <p>token : </p>
+    <div id="tok"></div>
+<script>
+    var btn = document.getElementById("btn");
+    btn.addEventListener("click",()=>{
+        const xhr = new XMLHttpRequest();
+        xhr.open("GET","http://127.0.0.1/secret.html",true);
+        xhr.responseType ="document";
+        xhr.send();
+
+        xhr.onreadystatechange = ()=>{
+            if( xhr.readyState == 4 && xhr.status == 200 ){
+                var inject_in_site = document.getElementById("tok");
+                inject_in_site.innerHTML = xhr.response.getElementById("token").textContent;
+            }
+        }
+    });
+</script>
+</body>
+</html>
