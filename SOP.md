@@ -15,9 +15,17 @@ Example:
 https://example.com
 
 https://example.com/home/about.php  SOP
+
+
 http://www.example.com              Not SOP  => protocol
+
+
 https://example.com:81              Not SOP  => port
+
+
 https://www.example.com             Not SOP  => host
+
+
 
 
 * Why is SOP important? Prevent XSS and CSRF attacks
@@ -28,9 +36,9 @@ https://www.example.com             Not SOP  => host
 1-Tags that do not follow SOP:
 
 
-<img>
-<script> 
-<iframe>
+img
+script
+iframe
 ...
 
 Example: 
@@ -38,7 +46,7 @@ Example:
 If a web developer puts a verify-token.js in the root of his web directory for his login panel, the attacker can read it. How? Attacker can read it by using tags like img and script.
 
 
-<img src=https://target.tld/home/user1/verify-token.js >
+<!-- <img src=https://target.tld/home/user1/verify-token.js > -->
 
 
 
