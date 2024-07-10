@@ -61,14 +61,14 @@ Consider the following HTML snippet:
 JavaScript can access and modify this document using the DOM API. For example:
 
 
-<script>
-// Access the element with the id 'header'
-const header = document.getElementById('header');
+javascript:
+            // Access the element with the id 'header'
+            const header = document.getElementById('header');
+            
+            // Change the content of the header element
+            header.textContent = 'Welcome to the DOM Example';
+            In this example, document.getElementById('header') accesses the <h1> element, and header.textContent modifies its content.
 
-// Change the content of the header element
-header.textContent = 'Welcome to the DOM Example';
-In this example, document.getElementById('header') accesses the <h1> element, and header.textContent modifies its content.
-</script>
 
 
 
