@@ -27,19 +27,19 @@ But if the attacker wants to send a request directly to that path, SOP stops the
 *XSS Types:
 
 
-  - Reflected XSS(RXSS):
+  - Reflected XSS => RXSS:
 
     
          https://target.tld/search?q=<script>alert(1);</script>
 
 
-  - Stored XSS(SXSS):
+  - Stored XSS => SXSS :
 
     
          https://target.tld/user?email=<script>alert(1);</script>
 
 
-  - DOM XSS(DXSS):
+  - DOM XSS => DXSS:
 
     
         https://target.tld/user#";alert(1);
@@ -48,7 +48,7 @@ But if the attacker wants to send a request directly to that path, SOP stops the
         developer => location.hash
     
 
-   - Blind XSS(BXSS):
+   - Blind XSS BXSS or Persistent XSS:
    
     The code runs where Attacker doesn't see it
 
