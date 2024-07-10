@@ -96,11 +96,16 @@ In fact, each browser has a CRP for itself, which determines which part of the p
 
 
 
-DOM : Spource & Sink
+DOM : Source & Sink
+
+
+
 *DOM Source => Where data is received or input into the DOM. Examples include: 
   - document.url
   - location.hash 
   - xhr.responseText
+
+
 
 *DOM Sink => Where data is output or rendered in the DOM. Examples include:
   - document.write()
