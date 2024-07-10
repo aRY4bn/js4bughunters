@@ -48,7 +48,7 @@ But if the attacker wants to send a request directly to that path, SOP stops the
         developer => location.hash
     
 
-   - Blind XSS BXSS or Persistent XSS:
+   - Persistent XSS or Blind XSS => BXSS:
    
     The code runs where Attacker doesn't see it
 
