@@ -5,12 +5,18 @@ DOM => Document Object Model
  
  -DOM => api 
 
+ 
+
 The Document Object Model (DOM) is a programming interface for web documents. It represents the structure of a document (like an HTML or XML file) as a tree of objects, where each object corresponds to a part of the document. This model allows programs and scripts (like JavaScript) to dynamically access and update the content, structure, and style of documents.
 JS use api(DOM) to connect with HTML
 
 
 Relationship between HTML and DOM:
+
+
   -HTML is static and defines the content and structure of a webpage.
+
+  
   -DOM is an API that allows JavaScript to interact with and manipulate HTML.
 
 
@@ -71,7 +77,7 @@ javascript:
 
 
 
-
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 CRP => Critical Rendering Path
 
