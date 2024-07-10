@@ -85,7 +85,11 @@ javascript:
 
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------
 
+
+
 CRP => Critical Rendering Path
+
+The Critical Rendering Path (CRP) is the sequence of steps the browser takes to convert HTML, CSS, and JavaScript into a webpage that the user can interact with. It determines which parts of the page should be rendered first based on priority. Understanding the CRP can help optimize web performance.
 
 
 In fact, each browser has a CRP for itself, which determines which part of the page should be rendered first based on its priority.
@@ -93,12 +97,15 @@ In fact, each browser has a CRP for itself, which determines which part of the p
 
 
 DOM : Spource & Sink
-*DOM Source => When the user enters information on the site, it sits in this section 
+*DOM Source => Where data is received or input into the DOM. Examples include: 
   - document.url
   - location.hash 
   - xhr.responseText
 
-*DOM Sink => It is the place where user input is executed
+*DOM Sink => Where data is output or rendered in the DOM. Examples include:
   - document.write()
   - innerHTML
   - postMessage
+
+
+These concepts help identify potential security vulnerabilities, such as Cross-Site Scripting (XSS), where malicious scripts might exploit how data flows from sources to sinks.
