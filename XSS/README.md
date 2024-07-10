@@ -9,7 +9,7 @@ this attack aims the Victim's browser , not the server!
 - bypass SOP:
 
   
-   https://target.tld/search?q=<XSS_Payload>
+       https://target.tld/search?q=<XSS_Payload>
 
 
 For example, the attacker in the above address has realized that he can launch an XSS attack by injecting the payload, and he knows that the target token is located in the /usr/token path, and he can get it with the right payload. 
@@ -30,23 +30,23 @@ But if the attacker wants to send a request directly to that path, SOP stops the
   - Reflected XSS(RXSS):
 
     
-     https://target.tld/search?q=<script>alert(1);</script>
+         https://target.tld/search?q=<script>alert(1);</script>
 
 
   - Stored XSS(SXSS):
 
     
-     https://target.tld/user?email=<script>alert(1);</script>
+         https://target.tld/user?email=<script>alert(1);</script>
 
 
   - DOM XSS(DXSS):
 
     
-    https://target.tld/user#";alert(1);
-
+        https://target.tld/user#";alert(1);
     
-    developer => location.hash
-
+        
+        developer => location.hash
+    
 
    - Blind XSS(BXSS):
    
