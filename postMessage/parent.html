@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<body>
+    <h1>Parent</h1>
+    <p>postMessage Concept</p>
+    <button id="btn" onclick="">click</button>
+
+    <script>
+        var child = window.open("http://target.tld/child.html", "child");
+
+        var btn = document.getElementById("btn");
+        btn.addEventListener("click", () => {
+            var msg = "hello"; 
+            child.postMessage(msg, "*");
+            child.focus();
+        });
+    </script>
+</body>
+</html>
