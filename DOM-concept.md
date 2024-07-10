@@ -31,12 +31,12 @@ In fact, each browser has a CRP for itself, which determines which part of the p
 
 
 DOM : Spource & Sink
-*DOM Source => وقتی کاربر اطلاعات را در سایت وارد میکند در این قسمت می نشیند 
+*DOM Source => When the user enters information on the site, it sits in this section 
   - document.url
   - location.hash 
   - xhr.responseText
 
-*DOM Sink => محلی است که ورودی کاربر اجرا می شود
+*DOM Sink => It is the place where user input is executed
   - document.write()
   - innerHTML
   - postMessage
