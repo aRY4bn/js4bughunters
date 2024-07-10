@@ -46,7 +46,7 @@ Example:
 If a web developer puts a verify-token.js in the root of his web directory for his login panel, the attacker can read it. How? Attacker can read it by using tags like img and script.
 
 
-"<img src=https://target.tld/home/user1/verify-token.js>" 
+img src=https://target.tld/home/user1/verify-token.js
 
 
 
