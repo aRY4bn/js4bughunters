@@ -1,10 +1,20 @@
 DOM => Document Object Model 
 
  -HTML => Static 
+ 
+ 
  -DOM => api 
+
+
 JS use api(DOM) to connect with HTML
+
+
 It is an api that connects the js with the html of the page. 
+
+
 Actually, all tags and html codes are stored as documents in js and js can access it with DOM. 
+
+
 In fact, DOM takes files with html and xml extensions and turns them into an object that js can recognize. In fact, tags in html are known as elements in js
 
 
