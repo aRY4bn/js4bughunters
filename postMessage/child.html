@@ -1,0 +1,13 @@
+ <!DOCTYPE html>
+<html>
+<body>
+    <h1>Child</h1>
+    <div id="sender">test</div>
+
+    <script>
+        window.addEventListener("message", (event) => {
+            document.getElementById("sender").innerHTML = event.data;
+        });
+    </script>
+</body>
+</html>
