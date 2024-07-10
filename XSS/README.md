@@ -3,6 +3,8 @@
 
 This attack occurs whenever we can load a JavaScript code in the DOM of the desired page.
 
+this attack aims the Victim's browser , not the server!
+
 
 - bypass SOP:
 
