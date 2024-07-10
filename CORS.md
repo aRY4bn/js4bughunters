@@ -86,12 +86,43 @@ Random Custom header => JWT , CSRF-Token
 
 
 origin: test.com => {
+
              -Access-Control-Allow-Origin: test.com
              -Access-Control-Allow-Credential: True 
             // no custom header like JWT , CSRF Token
 }
 
 
+
+*Browser Solution for CORS Misconfiguration :
+
+
+If the attacker puts origin: test.com in his request header and the response headers he receives from the server are as follows:
+
+
+origin: test.com => { 
+
+          - Access-Control-Allow-Origin: * 
+          - Access-Control-Allow-Credential: True
+} 
+
+
+The browser itself stops sending the cookie with the request header! 
+If Access-Control-Allow-Credentials is true, the value of Access-Control-Allow-Origin cannot be *. 
+This is because it is not security-friendly to allow all (*) origins with credentials.
+
+
+
+*CORS Misconfiguration Vulnerability:
+
+
+It is considered a very dangerous vulnerability because the attacker can obtain sensitive information such as Seesion and apikey, etc.
+
+
+How to diagnose: By checking the important headers, namely Access-Control-Allow-Origin and Access-Control-Allow-Credential! 
+
+
+By changing the Access-Control-Allow-Origin header to the attacker's origin and testing again
 
 
 
