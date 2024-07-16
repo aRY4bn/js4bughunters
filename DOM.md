@@ -57,30 +57,30 @@ This tree structure allows JavaScript to navigate through the document and manip
 Example: Accessing and Modifying the DOM
 Consider the following HTML snippet:
 
-
-<!DOCTYPE html>
-<html>
-<head>
-  <title>Document Object Model Example</title>
-</head>
-<body>
-  <h1 id="header">Hello, World!</h1>
-  <p>This is an example paragraph.</p>
-</body>
-</html>
+     
+     <!DOCTYPE html>
+     <html>
+     <head>
+       <title>Document Object Model Example</title>
+     </head>
+     <body>
+       <h1 id="header">Hello, World!</h1>
+       <p>This is an example paragraph.</p>
+     </body>
+     </html>
 
 
 JavaScript can access and modify this document using the DOM API. For example:
 
-
-javascript:
-            // Access the element with the id 'header'
-            const header = document.getElementById('header');
-            
-            // Change the content of the header element
-            header.textContent = 'Welcome to the DOM Example';
-            In this example, document.getElementById('header') accesses the <h1> element, and header.textContent modifies its content.
-
+      
+      <script>
+                  // Access the element with the id 'header'
+                  const header = document.getElementById('header');
+                  
+                  // Change the content of the header element
+                  header.textContent = 'Welcome to the DOM Example';
+                  In this example, document.getElementById('header') accesses the <h1> element, and header.textContent modifies its content.
+      </script>
 
 
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------
