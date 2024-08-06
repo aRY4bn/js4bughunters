@@ -35,7 +35,7 @@ like eval:
        -like find: 
    
          map, forEach , filter
-          [1].find(window["alert"])
+          [1].find(window[`alert`])
 
 
 *location based XSS: 
